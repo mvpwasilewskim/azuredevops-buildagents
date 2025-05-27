@@ -178,13 +178,12 @@ stages:
             displayName: "Build VM"
             inputs:
               targetType: filePath
-              filePath: ./runner-images/images.CI/linux-and-win/build-image.ps1
+              filePath: ./azuredevops-buildagents/scripts/build-image.ps1
               arguments: -ClientId $(CLIENT_ID) `
                 -ClientSecret $(CLIENT_SECRET) `
                 -TemplatePath $(TemplatePath) `
                 -ImageName "$(ManagedImageName)" `
-                -ImageResourceGroupName $(AZURE_RESOURCE_GROUP) `
-                -TempResourceGroupName "$(TempResourceGroupName)" `
+                -ResourceGroup $(AZURE_RESOURCE_GROUP) `
                 -SubscriptionId $(AZURE_SUBSCRIPTION) `
                 -TenantId $(AZURE_TENANT) `
                 -Location $(AZURE_LOCATION) `
