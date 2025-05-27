@@ -183,7 +183,7 @@ stages:
                 -ClientSecret $(CLIENT_SECRET) `
                 -TemplatePath $(TemplatePath) `
                 -ImageName "$(ManagedImageName)" `
-                -ResourceGroup $(AZURE_RESOURCE_GROUP) `
+                -ImageResourceGroupName $(AZURE_RESOURCE_GROUP) `
                 -SubscriptionId $(AZURE_SUBSCRIPTION) `
                 -TenantId $(AZURE_TENANT) `
                 -Location $(AZURE_LOCATION) `
