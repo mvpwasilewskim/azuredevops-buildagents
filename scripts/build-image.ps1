@@ -5,7 +5,6 @@ param(
     [String] [Parameter (Mandatory=$true)] $Location,
     [String] [Parameter (Mandatory=$true)] $ImageName,
     [String] [Parameter (Mandatory=$true)] $ImageResourceGroupName,
-    [String] [Parameter (Mandatory=$true)] $TempResourceGroupName,
     [String] [Parameter (Mandatory=$true)] $SubscriptionId,
     [String] [Parameter (Mandatory=$true)] $TenantId,
     [String] [Parameter (Mandatory=$false)] $pluginVersion = "2.2.1",
