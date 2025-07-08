@@ -166,6 +166,7 @@ stages:
                 } else {
                   Write-Host "##[section] Patch not applied as $(TemplatePath) is not a Windows template"
                 }
+            enabled: false
 
           - task: PowerShell@2
             name: buildVm
